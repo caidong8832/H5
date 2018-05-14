@@ -1,0 +1,529 @@
+{
+  "index.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "article.html",
+      "community.html",
+      "user.html",
+      "login.html",
+      "more.html",
+      "images/user.png",
+      "images/article.png",
+      "images/community.png",
+      "images/more.png",
+      "images/index.png",
+      "js/swiper.jquery.min.js",
+      "js/jquery-2.1.3.min.js",
+      "css/swiper.min.css",
+      "js/mui.enterfocus.js",
+      "js/main.js",
+      "css/more2.css",
+      "css/more1.css",
+      "images/image.png",
+      "image.html",
+      "roll1.html",
+      "roll5.html",
+      "li1.html",
+      "li2.html",
+      "roll4.html",
+      "roll2.html",
+      "roll3.html"
+    ],
+    "refer": [
+      "login.html",
+      "user.html",
+      "community.html",
+      "article.html",
+      "more.html",
+      "image.html",
+      "roll1.html",
+      "roll5.html",
+      "li1.html",
+      "li2.html",
+      "roll4.html",
+      "roll2.html",
+      "roll3.html"
+    ]
+  },
+  "more.html": {
+    "resources": [
+      "community.html",
+      "article.html",
+      "user.html",
+      "login.html",
+      "index.html"
+    ],
+    "refer": [
+      "community.html",
+      "article.html",
+      "user.html",
+      "index.html"
+    ]
+  },
+  "community.html": {
+    "resources": [
+      "more.html",
+      "article.html",
+      "user.html",
+      "login.html",
+      "index.html",
+      "images/communityhead.png",
+      "images/head.png",
+      "image.html",
+      "pull2.html",
+      "pull5.html",
+      "pull3.html"
+    ],
+    "refer": [
+      "more.html",
+      "article.html",
+      "user.html",
+      "index.html",
+      "image.html",
+      "pull2.html",
+      "pull5.html",
+      "pull3.html"
+    ]
+  },
+  "article.html": {
+    "resources": [
+      "more.html",
+      "index.html",
+      "community.html",
+      "user.html",
+      "images/search.png",
+      "contents.html"
+    ],
+    "refer": [
+      "more.html",
+      "index.html",
+      "community.html",
+      "user.html",
+      "contents.html"
+    ]
+  },
+  "user.html": {
+    "resources": [
+      "more.html",
+      "community.html",
+      "index.html",
+      "login.html",
+      "fonts/mui.ttf",
+      "images/touxiang.png",
+      "images/userhead.png",
+      "images/user.png",
+      "images/article.png",
+      "images/community.png",
+      "css/mui.min.css",
+      "images/more.png",
+      "images/index.png",
+      "myfollow.html",
+      "myissue.html",
+      "js/app.js",
+      "js/mui.min.js",
+      "js/mui.enterfocus.js",
+      "issue.html",
+      "myinformation.html",
+      "images/head.png",
+      "myquestion.html",
+      "js/main.js",
+      "css/more2.css",
+      "js/jquery-2.1.3.min.js",
+      "image.html",
+      "examine.html",
+      "lookexamine.html",
+      "chat.html"
+    ],
+    "refer": [
+      "more.html",
+      "community.html",
+      "myfollow.html",
+      "login.html",
+      "myissue.html",
+      "index.html",
+      "issue.html",
+      "myinformation.html",
+      "myquestion.html",
+      "image.html",
+      "examine.html",
+      "lookexamine.html",
+      "chat.html"
+    ]
+  },
+  "login.html": {
+    "resources": [
+      "images/user.png",
+      "js/app.js",
+      "images/weixin.png",
+      "images/qq.png",
+      "js/mui.enterfocus.js",
+      "images/index.png",
+      "images/article.png",
+      "images/community.png",
+      "js/mui.min.js",
+      "user.html",
+      "images/sinaweibo.png",
+      "css/mui.min.css",
+      "images/more.png",
+      "more.html",
+      "reg.html",
+      "community.html",
+      "index.html",
+      "article.html",
+      "images/back.png",
+      "fonts/mui.ttf"
+    ],
+    "refer": [
+      "main.html",
+      "user.html",
+      "index.html",
+      "reg.html"
+    ]
+  },
+  "reg.html": {
+    "resources": [
+      "login.html",
+      "fonts/mui.ttf",
+      "css/style.css"
+    ],
+    "refer": [
+      "login.html"
+    ]
+  },
+  "myfollow.html": {
+    "resources": [
+      "user.html"
+    ],
+    "refer": [
+      "user.html"
+    ]
+  },
+  "myissue.html": {
+    "resources": [
+      "user.html"
+    ],
+    "refer": [
+      "user.html"
+    ]
+  },
+  "issue.html": {
+    "resources": [
+      "js/issue.js",
+      "js/app.js",
+      "js/exif.js",
+      "js/app.min.js",
+      "css/cropper.css",
+      "user.html",
+      "js/cropper.min.js",
+      "js/jquery-2.1.3.min.js"
+    ],
+    "refer": [
+      "user.html"
+    ]
+  },
+  "myinformation.html": {
+    "resources": [
+      "js/app.js",
+      "headinfo.html",
+      "test4.html",
+      "user.html",
+      "test.html",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "js/mui.enterfocus.js",
+      "map.html",
+      "images/image.png"
+    ],
+    "refer": [
+      "headinfo.html",
+      "test4.html",
+      "user.html",
+      "test.html",
+      "map.html"
+    ]
+  },
+  "headinfo.html": {
+    "resources": [
+      "js/exif.js",
+      "js/app.min.js",
+      "css/cropper.css",
+      "myinformation.html",
+      "js/cropper.min.js",
+      "js/jquery-2.1.3.min.js",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "images/head.png",
+      "js/hammer.js",
+      "js/iscroll-zoom.js",
+      "js/jquery.photoClip.js",
+      "js/jquery.min.js",
+      "css/style.css",
+      "css/mui.css"
+    ],
+    "refer": [
+      "myinformation.html"
+    ]
+  },
+  "test.html": {
+    "resources": [
+      "js/hammer.js",
+      "js/iscroll-zoom.js",
+      "js/jquery.photoClip.js",
+      "js/jquery.min.js",
+      "css/style.css",
+      "css/mui.css",
+      "myinformation.html"
+    ],
+    "refer": [
+      "myinformation.html"
+    ]
+  },
+  "image.html": {
+    "resources": [
+      "chat.html",
+      "images/head.png",
+      "user.html"
+    ],
+    "refer": [
+      "chat.html",
+      "user.html"
+    ]
+  },
+  "chat.html": {
+    "resources": [
+      "css/mui.css",
+      "image.html",
+      "user.html"
+    ],
+    "refer": [
+      "image.html",
+      "user.html"
+    ]
+  },
+  "roll1.html": {
+    "resources": [
+      "index.html",
+      "css/more2.css",
+      "images/user.png",
+      "images/article.png",
+      "js/main.js",
+      "images/community.png",
+      "js/mui.min.js",
+      "js/jquery-2.1.3.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "images/image.png",
+      "js/mui.enterfocus.js",
+      "images/more.png",
+      "images/index.png"
+    ],
+    "refer": [
+      "index.html"
+    ]
+  },
+  "roll5.html": {
+    "resources": [
+      "index.html"
+    ],
+    "refer": [
+      "index.html"
+    ]
+  },
+  "li1.html": {
+    "resources": [
+      "index.html"
+    ],
+    "refer": [
+      "index.html"
+    ]
+  },
+  "li2.html": {
+    "resources": [
+      "index.html"
+    ],
+    "refer": [
+      "index.html"
+    ]
+  },
+  "roll4.html": {
+    "resources": [
+      "index.html"
+    ],
+    "refer": [
+      "index.html"
+    ]
+  },
+  "cons.html": {
+    "resources": [
+      "js/jquery.qqFace.js",
+      "js/jquery.min2.js",
+      "arclist/1.gif",
+      "arclist/68.gif",
+      "arclist/62.gif",
+      "arclist/58.gif",
+      "arclist/7.gif",
+      "arclist/64.gif",
+      "arclist/67.gif",
+      "arclist/10.gif",
+      "arclist/45.gif",
+      "arclist/41.gif",
+      "arclist/30.gif",
+      "arclist/20.gif",
+      "arclist/11.gif",
+      "arclist/47.gif",
+      "arclist/74.gif",
+      "arclist/39.gif",
+      "arclist/72.gif",
+      "arclist/15.gif",
+      "arclist/21.gif",
+      "arclist/75.gif",
+      "arclist/51.gif",
+      "arclist/71.gif",
+      "arclist/13.gif",
+      "arclist/37.gif",
+      "arclist/73.gif",
+      "arclist/69.gif",
+      "arclist/65.gif",
+      "arclist/18.gif",
+      "arclist/17.gif",
+      "arclist/42.gif",
+      "arclist/57.gif",
+      "arclist/55.gif",
+      "arclist/4.gif",
+      "arclist/61.gif",
+      "arclist/36.gif",
+      "arclist/6.gif",
+      "arclist/49.gif",
+      "arclist/12.gif",
+      "arclist/28.gif",
+      "arclist/53.gif",
+      "arclist/35.gif",
+      "arclist/60.gif",
+      "arclist/32.gif",
+      "arclist/33.gif",
+      "arclist/66.gif",
+      "arclist/31.gif",
+      "arclist/40.gif",
+      "arclist/5.gif",
+      "arclist/52.gif",
+      "arclist/26.gif",
+      "arclist/56.gif",
+      "arclist/22.gif",
+      "arclist/19.gif",
+      "arclist/25.gif",
+      "arclist/38.gif",
+      "arclist/63.gif",
+      "arclist/44.gif",
+      "arclist/48.gif",
+      "arclist/16.gif",
+      "arclist/29.gif",
+      "arclist/34.gif",
+      "arclist/43.gif",
+      "arclist/70.gif",
+      "arclist/14.gif",
+      "arclist/8.gif",
+      "arclist/27.gif",
+      "arclist/2.gif",
+      "arclist/59.gif",
+      "arclist/24.gif",
+      "arclist/50.gif",
+      "arclist/3.gif",
+      "arclist/23.gif",
+      "arclist/9.gif",
+      "arclist/46.gif",
+      "arclist/54.gif",
+      "contents.html"
+    ],
+    "refer": [
+      "contents.html"
+    ]
+  },
+  "contents.html": {
+    "resources": [
+      "images/dz.png",
+      "images/pl.png",
+      "cons.html",
+      "images/tou.jpg",
+      "images/fx.png",
+      "images/tx1.jpg",
+      "community.html",
+      "index.html",
+      "css/more2.css",
+      "images/user.png",
+      "images/article.png",
+      "images/community.png",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "images/image.png",
+      "images/more.png",
+      "images/index.png"
+    ],
+    "refer": [
+      "cons.html",
+      "community.html",
+      "index.html"
+    ]
+  },
+  "pull5.html": {
+    "resources": [
+      "community.html"
+    ],
+    "refer": [
+      "community.html"
+    ]
+  },
+  "pull2.html": {
+    "resources": [
+      "community.html"
+    ],
+    "refer": [
+      "community.html"
+    ]
+  },
+  "roll3.html": {
+    "resources": [
+      "index.html"
+    ],
+    "refer": [
+      "index.html"
+    ]
+  },
+  "pull3.html": {
+    "resources": [
+      "community.html"
+    ],
+    "refer": [
+      "community.html"
+    ]
+  },
+  "examine.html": {
+    "resources": [
+      "yyzz.html",
+      "user.html"
+    ],
+    "refer": [
+      "yyzz.html",
+      "user.html"
+    ]
+  },
+  "yyzz.html": {
+    "resources": [
+      "examine.html"
+    ],
+    "refer": [
+      "examine.html"
+    ]
+  },
+  "lookexamine.html": {
+    "resources": [
+      "user.html"
+    ],
+    "refer": [
+      "user.html"
+    ]
+  }
+}

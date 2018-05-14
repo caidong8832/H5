@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		
+		<title></title>
+		<link href="css/mui.min.css" rel="stylesheet" />	    
+        <link rel="stylesheet" href="css/more2.css">
+        <link rel="stylesheet" href="css/nav.css">
+			<style>
+					.mui-content-padded {
+				margin-top: -20px;
+			}
+			
+			.link-area {
+				display: block;
+				margin-top: 25px;
+				text-align: center;
+			}
+			
+			.ui-page-login,
+			body {
+				width: 100%;
+				height: 100%;
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			  .container{
+        -webkit-column-width:160px;
+        -moz-column-width:160px;
+        -o-colum-width:160px;
+        -webkit-column-gap:1px;
+        -moz-column-gap:1px;
+        -o-column-gap:1px;
+    }
+    div:not(.container){
+        -webkit-border-radius:5px;
+        -moz-border-radius:5px;
+        border-radius:5px;
+        
+        border::#CCC 1px solid;
+        
+    }
+ html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+ 
+			
+			
+a {
+    color: #000;
+    text-decoration: none;
+}
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-weight: normal;
+}
+
+ #mohe-kuaidi_new .mh-wrap {
+            margin: 6px 0;
+        }
+ 
+            #mohe-kuaidi_new .mh-wrap a {
+                text-decoration: none;
+            }
+ 
+                #mohe-kuaidi_new .mh-wrap a:hover {
+                    text-decoration: underline;
+                }
+ 
+        #mohe-kuaidi_new .mh-form-wrap {
+            padding: 5px 15px;
+        }
+ 
+            #mohe-kuaidi_new .mh-form-wrap p {
+                margin: 10px 0;
+            }
+ 
+                #mohe-kuaidi_new .mh-form-wrap p label {
+                    margin-right: 10px;
+                    vertical-align: middle;
+                    padding: 6px 0;
+                }
+ 
+                #mohe-kuaidi_new .mh-form-wrap p input, #mohe-kuaidi_new .mh-form-wrap p select {
+                    width: 186px;
+                    line-height: normal;
+                    border: 1px solid #ccc;
+                    padding: 6px;
+                    box-sizing: border-box;
+                    margin: 0;
+                }
+ 
+                #mohe-kuaidi_new .mh-form-wrap p button {
+                    width: 80px;
+                    height: 28px;
+                    border: 1px solid #ccc;
+                    margin-left: 10px;
+                    text-align: center;
+                    color: #333;
+                    font-family: "Microsoft Yahei";
+                    font-size: 14px;
+                    cursor: pointer;
+                    background: #f7f7f7;
+                    background: -moz-linear-gradient(top,#f7f7f7,#ececec);
+                    background: -webkit-gradient(linear,left top,left bottom,color-stop(#f7f7f7),color-stop(#ececec));
+                    background: -ms-linear-gradient(top,#f7f7f7,#ececec);
+                    background: linear-gradient(to bottom,#f7f7f7,#ececec);
+                    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f7f7f7',endColorstr='#ececec',GradientType=0);
+                }
+ 
+                    #mohe-kuaidi_new .mh-form-wrap p button:hover {
+                        background: -moz-linear-gradient(top,#ececec,#f7f7f7);
+                        background: -webkit-gradient(linear,left top,left bottom,color-stop(#ececec),color-stop(#f7f7f7));
+                        background: -ms-linear-gradient(top,#ececec,#f7f7f7);
+                        background: linear-gradient(to bottom,#ececec,#f7f7f7);
+                        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ececec',endColorstr='#f7f7f7',GradientType=0);
+                    }
+ 
+                    #mohe-kuaidi_new .mh-form-wrap p button:active {
+                        background: -moz-linear-gradient(top,#f3f3f3,#fff);
+                        background: -webkit-gradient(linear,left top,left bottom,color-stop(#f3f3f3),color-stop(#fff));
+                        background: -ms-linear-gradient(top,#f3f3f3,#fff);
+                        background: linear-gradient(to bottom,#f3f3f3,#fff);
+                        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f3f3f3',endColorstr='#ffffff',GradientType=0);
+                    }
+ 
+            #mohe-kuaidi_new .mh-form-wrap form.mh-loading p button {
+                position: relative;
+                color: transparent;
+                pointer-events: none;
+            }
+ 
+                #mohe-kuaidi_new .mh-form-wrap form.mh-loading p button::after {
+                    background: url(http://p1.qhimg.com/d/inn/1b1cc057/loading_s.gif) no-repeat center;
+                    content: '';
+                    display: inline-block;
+                    width: 4em;
+                    height: 20px;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    margin-left: -2em;
+                    margin-top: -10px;
+                }
+ 
+            #mohe-kuaidi_new .mh-form-wrap .mh-error {
+                display: none;
+                color: #c00;
+            }
+ 
+                #mohe-kuaidi_new .mh-form-wrap .mh-error label {
+                    visibility: hidden;
+                }
+ 
+        #mohe-kuaidi_new .mh-list-wrap {
+            max-height: 0;
+            _height: 0;
+            --overflow: hidden;
+        }
+ 
+            #mohe-kuaidi_new .mh-list-wrap.mh-unfold {
+                max-height: 281px;
+                _height: 281px;
+            }
+ 
+            #mohe-kuaidi_new .mh-list-wrap .mh-list {
+                border-top: 1px solid #eee;
+                margin: 0 15px;
+                padding: 15px 0;
+            }
+ 
+                #mohe-kuaidi_new .mh-list-wrap .mh-list ul {
+                    max-height: 255px;
+                    _height: 255px;
+                    padding-left: 75px;
+                    padding-right: 20px;
+                    --overflow: auto;
+                    height: 626px;
+                }
+ 
+                #mohe-kuaidi_new .mh-list-wrap .mh-list li {
+                    position: relative;
+                    border-bottom: 1px solid #f5f5f5;
+                    margin-bottom: 8px;
+                    padding-bottom: 8px;
+                    color: #666;
+                }
+ 
+                    #mohe-kuaidi_new .mh-list-wrap .mh-list li.first {
+                        color: #3eaf0e;
+                    }
+ 
+                    #mohe-kuaidi_new .mh-list-wrap .mh-list li p {
+                        line-height: 20px;
+                    }
+ 
+                    #mohe-kuaidi_new .mh-list-wrap .mh-list li .before {
+                        position: absolute;
+                        left: -13px;
+                        top: 2.2em;
+                        height: 82%;
+                        width: 0;
+                        border-left: 2px solid #ddd;
+                    }
+ 
+                    #mohe-kuaidi_new .mh-list-wrap .mh-list li .after {
+                        position: absolute;
+                        left: -16px;
+                        top: 1.2em;
+                        width: 8px;
+                        height: 8px;
+                        background: #ddd;
+                        border-radius: 6px;
+                    }
+ 
+                    #mohe-kuaidi_new .mh-list-wrap .mh-list li.first .after {
+                        background: #3eaf0e;
+                    }
+ 
+        #mohe-kuaidi_new .mh-kd-wrap {
+            position: relative;
+            border-top: 1px solid #eee;
+            padding: 15px;
+            padding-bottom: 25px;
+            background: #fafafa;
+        }
+ 
+            #mohe-kuaidi_new .mh-kd-wrap li {
+                display: none;
+            }
+ 
+                #mohe-kuaidi_new .mh-kd-wrap li.mh-selected {
+                    display: block;
+                }
+ 
+            #mohe-kuaidi_new .mh-kd-wrap .mh-img-wrap {
+                float: left;
+                width: 50px;
+                height: 50px;
+                margin-right: 10px;
+                overflow: hidden;
+            }
+ 
+                #mohe-kuaidi_new .mh-kd-wrap .mh-img-wrap img {
+                    width: 50px;
+                }
+ 
+            #mohe-kuaidi_new .mh-kd-wrap .mh-info-wrap {
+                font-size: 13px;
+                margin-left: 60px;
+            }
+ 
+                #mohe-kuaidi_new .mh-kd-wrap .mh-info-wrap p {
+                    margin-bottom: 8px;
+                }
+ 
+                #mohe-kuaidi_new .mh-kd-wrap .mh-info-wrap .mh-info-name {
+                    font-family: "Microsoft Yahei";
+                    font-size: 14px;
+                }
+ 
+                #mohe-kuaidi_new .mh-kd-wrap .mh-info-wrap .mh-info-link a {
+                    text-decoration: none;
+                    margin-right: 10px;
+                    padding: 2px 10px;
+                    border: 1px solid #ccc;
+                    color: #333;
+                }
+ 
+                    #mohe-kuaidi_new .mh-kd-wrap .mh-info-wrap .mh-info-link a:hover {
+                        background: white;
+                    }
+ 
+                    #mohe-kuaidi_new .mh-kd-wrap .mh-info-wrap .mh-info-link a:active {
+                        background: -moz-linear-gradient(top,#f3f3f3,#fff);
+                        background: -webkit-gradient(linear,left top,left bottom,color-stop(#f3f3f3),color-stop(#fff));
+                        background: -ms-linear-gradient(top,#f3f3f3,#fff);
+                        background: linear-gradient(to bottom,#f3f3f3,#fff);
+                        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f3f3f3',endColorstr='#ffffff',GradientType=0);
+                    }
+ 
+        #mohe-kuaidi_new .mh-slogan {
+            position: absolute;
+            right: 20px;
+            bottom: 0;
+            cursor: pointer;
+        }
+ 
+        #mohe-kuaidi_new .mh-slogan-hover {
+            color: #3eaf0e;
+        }
+ 
+        #mohe-kuaidi_new .mh-slogan span {
+            vertical-align: middle;
+        }
+ 
+        #mohe-kuaidi_new .mh-qrcode-wrap {
+            position: absolute;
+            right: 0;
+            bottom: -1px;
+            width: 96px;
+            margin-right: -110px;
+            border: 1px solid #d6d6d6;
+            color: #999;
+            padding: 6px;
+            box-shadow: 0 1px 1px #efefef;
+        }
+ 
+        #mohe-kuaidi_new .mh-icon {
+            background: url(http://p9.qhimg.com/d/inn/f2e20611/kuaidi_new.png) no-repeat 0 0;
+        }
+ 
+        #mohe-kuaidi_new .mh-icon-qr {
+            background-position: 0 -17px;
+            display: inline-block;
+            *zoom: 1;
+            width: 13px;
+            height: 13px;
+            vertical-align: middle;
+            margin-left: 10px;
+        }
+ 
+        #mohe-kuaidi_new .mh-slogan-hover .mh-icon-qr {
+            background-position: 0 0;
+        }
+ 
+        #mohe-kuaidi_new .mh-icon-t {
+            position: absolute;
+            left: -9px;
+            bottom: 14px;
+            width: 10px;
+            height: 16px;
+            background-position: 0 -34px;
+            background-color: white;
+        }
+ 
+        #mohe-kuaidi_new .mh-icon-new {
+            position: absolute;
+            left: -20px;
+            top: 1.5em;
+            width: 41px;
+            height: 18px;
+            margin-left: -41px;
+            margin-top: -9px;
+            background-position: 0 -58px;
+        }
+ 
+        #mohe-kuaidi_new .mh-wrap .mb-search {
+            text-decoration: underline;
+            margin-left: 20px;
+        }
+ 
+            #mohe-kuaidi_new .mh-wrap .mb-search .mh-new {
+                display: inline-block;
+                width: 21px;
+                height: 9px;
+                margin: -1px 0 0 3px;
+                background: url(http://p0.qhimg.com/t01a3bd62f6db66463c.png) no-repeat;
+            }
+ 
+        #mohe-kuaidi_new .mh-identcode {
+            border-top: 1px solid #f5f5f5;
+            padding: 10px 15px;
+            display: none;
+        }
+ 
+            #mohe-kuaidi_new .mh-identcode .mh-img-wrap {
+                float: left;
+                width: 54px;
+                height: 54px;
+                padding: 6px;
+                border: 1px solid #ccc;
+                overflow: hidden;
+            }
+ 
+                #mohe-kuaidi_new .mh-identcode .mh-img-wrap img {
+                    width: 54px;
+                }
+ 
+            #mohe-kuaidi_new .mh-identcode .mh-img-tip {
+                margin-left: 78px;
+            }
+ 
+            #mohe-kuaidi_new .mh-identcode .mh-tip-txt {
+                font-size: 13px;
+                line-height: 38px;
+                color: #666;
+            }
+ 
+            #mohe-kuaidi_new .mh-identcode .mh-btn-install {
+                text-decoration: none;
+                margin-right: 10px;
+                padding: 2px 10px;
+                border: 1px solid #ccc;
+                color: #333;
+            }
+ 
+                #mohe-kuaidi_new .mh-identcode .mh-btn-install:hover {
+                    text-decoration: none;
+                }
+    
+	</style>
+	</head>
+	<body>
+		
+		<header class="mui-bar mui-bar-nav">
+			<!--<a href="index.html"><img src="images/back.png" height="40"></a>-->
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title"></h1>
+			<a href="image.html" class="mui-pull-right" style="position: absolute;top: 15px;left: 90%;"><img src="images/image.png" height="20"></a>
+		</header>
+
+	
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <!-- Swiper JS -->
+        <script src="js/mui.min.js"></script>
+		<script src="js/mui.enterfocus.js"></script>
+		<script src="js/main.js"></script>
+    <!-- Initialize Swiper -->
+    
+    <div style="height: 50px;"></div>
+    
+<div data-mohe-type="kuaidi_new" class="g-mohe " id="mohe-kuaidi_new">
+        <div id="mohe-kuaidi_new_nucom">
+            <div class="mohe-wrap mh-wrap">
+                <div class="mh-cont mh-list-wrap mh-unfold">
+                    <div class="mh-list">
+                        <ul>
+                            <li class="first">
+                                <p>2018-01-09 14:00:00</p>
+                                <p>您预订已经收到，请耐心等待</p>
+                                <span class="before"></span><span class="after"></span><i class="mh-icon mh-icon-new"></i></li>
+                            <li>
+                                
+                            <li>
+                                <p>2018-01-09 14:03:00</p>
+                                <p>请您携带好本人身份证于今晚22:00前到酒店办理入住</p>
+                                <span class="before"></span><span class="after"></span></li>
+                            
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+   
+		<div class="nav">
+            <ul>
+                <li>
+                    <a href="index.html"><span><img src="images/index.png" height="20"></span><span>首页</span></a>
+                </li>
+                <li style="position:relative;">
+                    <a href="article.html"><span><img src="images/article.png" height="20"></span><span>记录</span></a>
+                </li>
+                <li>
+                    <a href="community.html"><span><img src="images/community.png" height="20"></span><span>详情</span></a>
+                </li>
+                <li>
+                    <a href="user.html"><span><img src="images/user.png" height="20"></span><span>个人</span></a>
+                </li>
+                
+<li>
+<div class="sucaihuo-container">
+<section class="cd-section">
+<a class="cd-bouncy-nav-trigger" href="javascript:;" target="_self"><span><img src="images/more.png" height="20"></span><span>更多</span></a>
+</section>
+<div class="cd-bouncy-nav-modal">
+<nav>
+<ul class="cd-bouncy-nav">
+<li><a href="index.html">首页</a></li>
+<li><a href="">便签</a></li>
+<li><a href="">联系</a></li>
+<li><a href="">文件</a></li>
+<li><a href="">工具</a></li>
+</ul>
+</nav>
+</div>
+</div>
+                </li>
+            </ul>
+        </div>
+        
+	</body>
+</html>

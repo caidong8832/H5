@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="flybear.hziee.app.mapper.StaffInfoMapper">
+  <resultMap id="BaseResultMap" type="flybear.hziee.app.model.StaffInfo">
+    	<id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="staff_name" property="staffName" jdbcType="VARCHAR"/>
+        <result column="staff_sex" property="staffSex" jdbcType="INTEGER"/>
+        <result column="staff_level" property="staffLevel" jdbcType="INTEGER"/>
+        <result column="staff_phone" property="staffPhone" jdbcType="INTEGER"/>
+        <result column="staff_area" property="staffArea" jdbcType="VARCHAR"/>
+        <result column="intime" property="intime" jdbcType="INTEGER"/>
+        <result column="outtime" property="outtime" jdbcType="INTEGER"/>
+  </resultMap>
+
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id,staff_name,staff_sex,staff_level,staff_phone,staff_area,intime,outtime from x_staff_info
+  </select>
+    
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id,staff_name,staff_sex,staff_level,staff_phone,staff_area,intime,outtime from x_staff_info
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from x_staff_info
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+
+  <update id="updateByPrimaryKey" parameterType="flybear.hziee.app.model.StaffInfo">
+    update x_staff_info set staff_name = #{staffName,jdbcType=VARCHAR},staff_sex = #{staffSex,jdbcType=INTEGER},staff_level = #{staffLevel,jdbcType=INTEGER},staff_phone = #{staffPhone,jdbcType=INTEGER},staff_area = #{staffArea,jdbcType=VARCHAR},intime = #{intime,jdbcType=INTEGER},outtime = #{outtime,jdbcType=INTEGER}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+
+  <insert id="insert" parameterType="flybear.hziee.app.model.StaffInfo">
+    <selectKey resultType="java.lang.Integer" keyProperty="id" order="AFTER" >
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into x_staff_info (id,staff_name,staff_sex,staff_level,staff_phone,staff_area,intime,outtime)  
+    values ( #{id,jdbcType=INTEGER},#{staffName,jdbcType=VARCHAR},#{staffSex,jdbcType=INTEGER},#{staffLevel,jdbcType=INTEGER},#{staffPhone,jdbcType=INTEGER},#{staffArea,jdbcType=VARCHAR},#{intime,jdbcType=INTEGER},#{outtime,jdbcType=INTEGER})
+  </insert>  
+</mapper>

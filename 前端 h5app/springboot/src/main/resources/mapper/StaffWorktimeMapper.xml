@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="flybear.hziee.app.mapper.StaffWorktimeMapper">
+  <resultMap id="BaseResultMap" type="flybear.hziee.app.model.StaffWorktime">
+    	<id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="staff_id" property="staffId" jdbcType="INTEGER"/>
+        <result column="onwork_time" property="onworkTime" jdbcType="INTEGER"/>
+        <result column="outwork_time" property="outworkTime" jdbcType="INTEGER"/>
+        <result column="working_time" property="workingTime" jdbcType="INTEGER"/>
+  </resultMap>
+
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id,staff_id,onwork_time,outwork_time,working_time from x_staff_worktime
+  </select>
+    
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id,staff_id,onwork_time,outwork_time,working_time from x_staff_worktime
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from x_staff_worktime
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+
+  <update id="updateByPrimaryKey" parameterType="flybear.hziee.app.model.StaffWorktime">
+    update x_staff_worktime set staff_id = #{staffId,jdbcType=INTEGER},onwork_time = #{onworkTime,jdbcType=INTEGER},outwork_time = #{outworkTime,jdbcType=INTEGER},working_time = #{workingTime,jdbcType=INTEGER}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+
+  <insert id="insert" parameterType="flybear.hziee.app.model.StaffWorktime">
+    <selectKey resultType="java.lang.Integer" keyProperty="id" order="AFTER" >
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into x_staff_worktime (id,staff_id,onwork_time,outwork_time,working_time)  
+    values ( #{id,jdbcType=INTEGER},#{staffId,jdbcType=INTEGER},#{onworkTime,jdbcType=INTEGER},#{outworkTime,jdbcType=INTEGER},#{workingTime,jdbcType=INTEGER})
+  </insert>  
+</mapper>

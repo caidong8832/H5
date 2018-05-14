@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="flybear.hziee.app.mapper.NewsMapper">
+  <resultMap id="BaseResultMap" type="flybear.hziee.app.model.News">
+    	<id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="title" property="title" jdbcType="VARCHAR"/>
+        <result column="content" property="content" jdbcType="VARCHAR"/>
+        <result column="filename" property="filename" jdbcType="VARCHAR"/>
+        <result column="time" property="time" jdbcType="VARCHAR"/>
+        <result column="is_hot" property="isHot" jdbcType="TINYINT"/>
+  </resultMap>
+
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id,title,content,filename,time,is_hot from x_news
+  </select>
+    
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id,title,content,filename,time,is_hot from x_news
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from x_news
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+
+  <update id="updateByPrimaryKey" parameterType="flybear.hziee.app.model.News">
+    update x_news set title = #{title,jdbcType=VARCHAR},content = #{content,jdbcType=VARCHAR},filename = #{filename,jdbcType=VARCHAR},time = #{time,jdbcType=VARCHAR},is_hot = #{isHot,jdbcType=TINYINT}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+
+  <insert id="insert" parameterType="flybear.hziee.app.model.News">
+    <selectKey resultType="java.lang.Integer" keyProperty="id" order="AFTER" >
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into x_news (id,title,content,filename,time,is_hot)  
+    values ( #{id,jdbcType=INTEGER},#{title,jdbcType=VARCHAR},#{content,jdbcType=VARCHAR},#{filename,jdbcType=VARCHAR},#{time,jdbcType=VARCHAR},#{isHot,jdbcType=TINYINT})
+  </insert>  
+</mapper>
